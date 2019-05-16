@@ -25,15 +25,15 @@ let clickTextHeight;
 
 function preload(){
   // load the shaders
-  blurH = loadShader('https://drive.google.com/open?id=1ESVSHvO3sXAMFrJYodKqAoEReq6HxX21', 'https://drive.google.com/open?id=1ELuYfH3Sc4HdR0s8NAhJzlki4LbaEf-v');
-  blurV = loadShader('https://drive.google.com/open?id=1ESVSHvO3sXAMFrJYodKqAoEReq6HxX21', 'https://drive.google.com/open?id=1ELuYfH3Sc4HdR0s8NAhJzlki4LbaEf-v');
-  colormapShader = loadShader('https://drive.google.com/open?id=1ESVSHvO3sXAMFrJYodKqAoEReq6HxX21', 'https://drive.google.com/open?id=1Ec2pUkbe7W1_KL4hxeIXRyi_aovCg6La');
+  blurH = loadShader('base.vert', 'blur.frag');
+  blurV = loadShader('base.vert', 'blur.frag');
+  colormapShader = loadShader('base.vert', 'colormap.frag');
   
   // load the images
-  img = loadImage('https://drive.google.com/open?id=1FFQSg6hXHYaf4Y6_-DZNKVdV83ohNt0V');
+  img = loadImage('mosque.jpg');
   
-//   findText = loadImage('/images/find the text white.png');
-//   clickText = loadImage('/images/click for next white.png');
+  findText = loadImage('/images/find the text white.png');
+  clickText = loadImage('/images/click for next white.png');
 }
 
 function setup() {
