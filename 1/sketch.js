@@ -30,10 +30,10 @@ function preload(){
   colormapShader = loadShader('base.vert', 'colormap.frag');
   
   // load the images
-  img = loadImage('mosque.jpg');
+  img = loadImage('../images/mosque.jpg');
   
-  findText = loadImage('/images/find the text white.png');
-  clickText = loadImage('/images/click for next white.png');
+  findText = loadImage('../images/find the text white.png');
+  clickText = loadImage('../images/click for next white.png');
 }
 
 function setup() {
